@@ -128,7 +128,7 @@ on our code of conduct, and the process for submitting pull requests to us.
     - Creating global variables for consistent and efficient component styling.
     - Enhancing user interface with interactive and visually appealing elements.
 
-- **[Trubay Vadim](https://github.com/VadimTrubay)**
+- **[Vadim Trubay](https://github.com/VadimTrubay)**
 
     - Building the MainPage with features like Daily goal, Water, and Food
       tracking.
