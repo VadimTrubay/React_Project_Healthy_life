@@ -17,7 +17,7 @@ import maintain from '../../../assets/images/maintain.png';
 import loseFat_girl from '../../../assets/images/loseFat_girl.png';
 import maintain_girl from '../../../assets/images/maintain_girl.png';
 import gainMuscle from '../../../assets/images/gainMuscle.png';
-import sprite from 'assets/images/sprite.svg';
+import sprite from '../../../assets/images/sprite.svg';
 import { updateGoal } from '../../../redux/auth/authOperations';
 import {
   DivImage,

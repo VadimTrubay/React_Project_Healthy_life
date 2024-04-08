@@ -1,14 +1,14 @@
-import { Suspense } from 'react';
-import { Outlet } from 'react-router-dom';
-import { Header } from '../HeaderComponents/Header/Header';
-import { Container, AppTitle } from './SharedLayout.styled';
+import {Suspense} from 'react';
+import {Outlet} from 'react-router-dom';
+import {Header} from '../HeaderComponents/Header/Header';
+import {Container, AppTitle} from './SharedLayout.styled';
 import PuffLoader from 'react-spinners/PuffLoader';
 
 const SharedLayout = () => {
   return (
     <>
       <header>
-        <Header />
+        <Header/>
       </header>
       <main>
         <section>
@@ -18,11 +18,11 @@ const SharedLayout = () => {
               fallback={
                 <PuffLoader
                   color="var(--primary-color-green-lite)"
-                  cssOverride={{ margin: '40vh auto 0 auto' }}
+                  cssOverride={{margin: '40vh auto 0 auto'}}
                 />
               }
             >
-              <Outlet />
+              <Outlet/>
             </Suspense>
           </Container>
         </section>

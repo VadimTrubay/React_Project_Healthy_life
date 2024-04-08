@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
 
 import PuffLoader from 'react-spinners/PuffLoader';
-import sprite from 'assets/images/sprite.svg';
+import sprite from '../../../assets/images/sprite.svg';
 import { RecommendedCard } from '../RecommendedCard/RecommendedCard';
 import {
   selectRecFoods,

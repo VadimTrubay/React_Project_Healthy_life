@@ -12,7 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectUserWeight } from '../../../redux/auth/authSelectors';
 import { updateWeight } from '../../../redux/auth/authOperations';
 import { DivEdit, DivImage, DivMenu, DivText, MainText, MenuDay, MenuText, MenuTitle, MenuDate, Text, TextWeight, BoxDate, ButtonSend, InputWeight, FormStyled, ButtonCancel, ButtonClose, IconClose, ErrorMessageStyled, FormBlock } from './WeightNav.styled';
-import sprite from 'assets/images/sprite.svg';
+import sprite from '../../../assets/images/sprite.svg';
 
 const WeightSchema = Yup.object().shape({
     weight: Yup.number('Enter correct number')
