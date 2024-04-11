@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material/styles';
-import { createGlobalStyle, css } from 'styled-components';
+import {createTheme} from '@mui/material/styles';
+import {createGlobalStyle, css} from 'styled-components';
 import 'modern-normalize';
 
 import PoppinsBold from './assets/fonts/Poppins-Bold.ttf';
@@ -49,25 +49,25 @@ export const theme = createTheme({
 });
 
 export const GlobalStyle = createGlobalStyle`
-:root{
---primary-color-white:#FFFFFF; 
---primary-color-black-one:#050505;
---primary-color-violet:#B6C3FF;
---primary-color-black-two:#0F0F0F;
---primary-color-lite-green:#45FFBC;
---primary-color-grey:#B6B6B6;
---primary-color-green-lite:#E3FFA8;
+  :root {
+    --primary-color-white: #FFFFFF;
+    --primary-color-black-one: #050505;
+    --primary-color-violet: #B6C3FF;
+    --primary-color-black-two: #0F0F0F;
+    --primary-color-lite-green: #45FFBC;
+    --primary-color-grey: #B6B6B6;
+    --primary-color-green-lite: #E3FFA8;
 
---secondary-color-grey-one:#292928;
---secondary-color-pink:#FFC4F7;
---secondary-color-yellow:#FFF3B7;
+    --secondary-color-grey-one: #292928;
+    --secondary-color-pink: #FFC4F7;
+    --secondary-color-yellow: #FFF3B7;
 
 
---main-font-size: 14px;
---main-line-height:1.4;
---main-letter-spacing:0.02em; 
---transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    --main-font-size: 14px;
+    --main-line-height: 1.4;
+    --main-letter-spacing: 0.02em;
+    --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
   @font-face {
     font-family: 'Poppins400';
@@ -90,62 +90,60 @@ export const GlobalStyle = createGlobalStyle`
   }
 
 
+  body {
+    margin: 0;
+    font-family: 'Poppins400', sans-serif;
+    background-color: var(--primary-color-black-one);
+    color: var(--primary-color-white);
+    font-size: var(--main-font-size);
+    line-height: var(--main-line-height);
+    letter-spacing: var(--main-letter-spacing);
+  }
 
-body {
-  margin: 0;
-  font-family: 'Poppins400', sans-serif;
-  background-color: var(--primary-color-black-one);
-  color: var(--primary-color-white); 
-  font-size: var(--main-font-size);
-  line-height: var(--main-line-height);
-  letter-spacing: var(--main-letter-spacing);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
     margin-top: 0;
     margin-bottom: 0;
-}
+  }
 
-ul,
-ol {
+  ul,
+  ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
     list-style: none;
-}
+  }
 
-img {
+  img {
     display: block;
     max-width: 100%;
     height: auto;
-}
+  }
 
-a
- {
-  color: currentColor;
-  text-decoration: none;
-}
+  a {
+    color: currentColor;
+    text-decoration: none;
+  }
 
-button {
+  button {
     cursor: pointer;
-}
+  }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-input[type='number'] {
+  input[type='number'] {
     -moz-appearance: textfield;
-     appearance: textfield;
-}
+    appearance: textfield;
+  }
 `;
 
 export const hidden = css`
